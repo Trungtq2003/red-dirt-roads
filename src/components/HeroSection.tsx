@@ -23,6 +23,9 @@ const HeroSection = () => {
             <a href="#tours" className="inline-block bg-primary text-primary-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:scale-[1.02] transition-transform">
               {t.hero.bookTour}
             </a>
+            <a href="#group-tours" className="inline-block border-2 border-foreground/30 text-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:border-primary hover:text-primary transition-colors">
+              {t.groupTours.heading}
+            </a>
             <a href="#featured" className="inline-block border-2 border-foreground/30 text-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:border-primary hover:text-primary transition-colors">
               {t.hero.viewRoutes}
             </a>

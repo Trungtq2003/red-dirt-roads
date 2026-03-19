@@ -7,9 +7,6 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { t } = useLanguage();
   const navItems = [
-    { label: t.nav.tours, href: "#tours" },
-    { label: t.nav.groupTours, href: "#group-tours" },
-    { label: t.nav.routes, href: "#featured" },
     { label: t.nav.about, href: "#about" },
     { label: t.nav.contact, href: "#contact" },
   ];

@@ -6,7 +6,7 @@ const CTABanner = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-surface noise-overlay py-20 relative overflow-hidden">
+    <section className="bg-surface noise-overlay py-20 relative overflow-hidden checkered-accent">
       <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <pattern id="topo" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
