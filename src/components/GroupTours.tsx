@@ -45,7 +45,7 @@ const GroupTours = () => {
                 <div className="flex items-center justify-between">
                   <span className="font-heading text-2xl font-bold text-primary">{tour.price}<span className="text-sm text-muted-foreground">{t.groupTours.perPerson}</span></span>
                   <button className="font-heading text-sm tracking-wider uppercase text-foreground border border-foreground/30 px-4 py-2 hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all">
-                    {t.groupTours.viewDetails}
+                    {t.tourGrid.bookNow}
                   </button>
                 </div>
               </div>
