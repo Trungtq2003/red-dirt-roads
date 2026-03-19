@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageContext";
 import TourCard from "./TourCard";
 import tourMountain from "@/assets/tour-mountain.jpg";
 import tourJungle from "@/assets/tour-jungle.jpg";
@@ -16,16 +17,18 @@ const tours = [
 ];
 
 const TourGrid = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="tours" className="bg-background py-20">
       <div className="container mx-auto px-6">
         <div className="mb-12">
-          <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">// SELECT YOUR ROUTE</p>
-          <h2 className="font-display text-5xl md:text-7xl text-foreground">OUR TOURS</h2>
+          <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">{t.tourGrid.tag}</p>
+          <h2 className="font-display text-5xl md:text-7xl text-foreground">{t.tourGrid.heading}</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tours.map((tour) => (
-            <TourCard key={tour.name} {...tour} />
+            <TourCard key={tour.name} {...tour} bookLabel={t.tourGrid.bookNow} />
           ))}
         </div>
       </div>
