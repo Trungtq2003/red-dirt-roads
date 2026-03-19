@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WILDTRACK — Motorbike Adventure Tours | Ride Where Roads End</title>
+  <meta name="description" content="Guided motorbike tours through Southeast Asia's most untamed trails, mountain passes, and jungle routes." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700&family=Crimson+Pro:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            heading: ['"Barlow Condensed"', 'sans-serif'],
+            body: ['"Crimson Pro"', 'serif'],
+            mono: ['"Space Mono"', 'monospace'],
+          },
+          colors: {
+            bg: '#0D0B09',
+            surface: '#1A1510',
+            ember: '#D4570A',
+            gold: '#8B6914',
+            parchment: '#F0E8D8',
+            muted: '#7A6A54',
+            danger: '#C41E0E',
+            border: '#2A2318',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #0D0B09; color: #F0E8D8; font-family: 'Crimson Pro', serif; }
+    h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; }
+    h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; }
+    .noise-overlay { position: relative; }
+    .noise-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.06;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+      pointer-events: none;
+      z-index: 1;
+    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0D0B09; }
+    ::-webkit-scrollbar-thumb { background: #D4570A; }
+  </style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-bg/80 backdrop-blur-md border-b border-border">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="#" class="font-display text-2xl text-parchment tracking-wider">WILDTRACK</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#tours" class="font-heading text-sm uppercase tracking-wider text-muted hover:text-ember transition-colors">Tours</a>
+      <a href="#group-tours" class="font-heading text-sm uppercase tracking-wider text-muted hover:text-ember transition-colors">Group Tours</a>
+      <a href="#featured" class="font-heading text-sm uppercase tracking-wider text-muted hover:text-ember transition-colors">Routes</a>
+      <a href="#about" class="font-heading text-sm uppercase tracking-wider text-muted hover:text-ember transition-colors">About</a>
+      <a href="#contact" class="font-heading text-sm uppercase tracking-wider text-muted hover:text-ember transition-colors">Contact</a>
+      <a href="#tours" class="bg-ember text-parchment font-heading text-sm tracking-wider uppercase px-5 py-2 hover:scale-[1.02] transition-transform">BOOK NOW</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="relative min-h-screen flex items-center noise-overlay overflow-hidden bg-bg">
+  <div class="absolute inset-0 bg-gradient-to-r from-bg via-bg/80 to-bg/40"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-32">
+    <div class="max-w-3xl">
+      <p class="font-mono text-sm tracking-[0.3em] text-ember mb-4 uppercase">// Adventure awaits beyond the pavement</p>
+      <h1 class="font-display text-6xl md:text-8xl lg:text-[10rem] leading-[0.85] text-parchment mb-6 tracking-tight">RIDE WHERE<br>ROADS END</h1>
+      <p class="font-heading text-xl md:text-2xl text-muted max-w-lg mb-10 font-light">Guided motorbike tours through Southeast Asia's most untamed trails, mountain passes, and jungle routes.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#tours" class="inline-block bg-ember text-parchment font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:scale-[1.02] transition-transform">BOOK A TOUR</a>
+        <a href="#featured" class="inline-block border-2 border-parchment/30 text-parchment font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:border-ember hover:text-ember transition-colors">VIEW ROUTES</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOUR GRID ============ -->
+<section id="tours" class="bg-bg py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-12">
+      <p class="font-mono text-xs tracking-[0.3em] text-ember mb-2">// SELECT YOUR ROUTE</p>
+      <h2 class="font-display text-5xl md:text-7xl text-parchment">OUR TOURS</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Repeat this card block for each tour -->
+      <div class="group bg-surface border border-border hover:border-l-4 hover:border-l-ember hover:shadow-[0_0_20px_rgba(212,87,10,0.3)] transition-all duration-300 hover:-translate-y-1">
+        <div class="relative overflow-hidden aspect-[4/3] bg-surface">
+          <div class="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent"></div>
+          <span class="absolute top-4 right-4 px-3 py-1 font-mono text-xs tracking-wider bg-gold text-parchment">HARD</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-2xl text-parchment mb-3">HA GIANG LOOP</h3>
+          <div class="flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs text-muted mb-4">
+            <span>4 DAYS</span><span>350 KM</span><span>MOUNTAIN</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="font-heading text-2xl font-bold text-ember">$389</span>
+            <button class="font-heading text-sm tracking-wider uppercase text-parchment border border-parchment/30 px-4 py-2 hover:bg-ember hover:border-ember transition-all">BOOK NOW →</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more tour cards as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ GROUP TOURS ============ -->
+<section id="group-tours" class="bg-surface py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-12">
+      <p class="font-mono text-xs tracking-[0.3em] text-ember mb-2">// RIDE TOGETHER</p>
+      <h2 class="font-display text-5xl md:text-7xl text-parchment mb-4">GROUP TOURS</h2>
+      <p class="font-heading text-xl text-muted max-w-lg">Join fellow riders on our most popular routes. Group discounts, shared campfires, unforgettable bonds.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <!-- Group tour card template -->
+      <div class="group bg-bg border border-border hover:border-l-4 hover:border-l-ember hover:shadow-[0_0_20px_rgba(212,87,10,0.3)] transition-all duration-300 hover:-translate-y-1">
+        <div class="relative overflow-hidden aspect-[16/9] bg-surface">
+          <div class="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent"></div>
+          <span class="absolute top-4 left-4 px-3 py-1 font-mono text-xs tracking-wider bg-gold/20 text-gold border border-gold/30">👥 GROUP</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-2xl text-parchment mb-3">HA GIANG EXPEDITION</h3>
+          <div class="flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs text-muted mb-4">
+            <span>4 DAYS</span><span>MOUNTAIN</span>
+          </div>
+          <div class="font-mono text-xs text-muted mb-4">
+            <span>Min riders: 6</span> · <span>Next: APR 12, 2026</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="font-heading text-2xl font-bold text-ember">$329<span class="text-sm text-muted">/person</span></span>
+            <button class="font-heading text-sm tracking-wider uppercase text-parchment border border-parchment/30 px-4 py-2 hover:bg-ember hover:border-ember transition-all">VIEW DETAILS →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="#tours" class="inline-block bg-ember text-parchment font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:scale-[1.02] transition-transform">BOOK A GROUP</a>
+      <a href="#tours" class="inline-block border-2 border-parchment/30 text-parchment font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:border-ember hover:text-ember transition-colors">EXPLORE ALL TOURS</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE STRIP ============ -->
+<section class="bg-surface border-y border-border py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="flex flex-col items-center text-center md:border-r md:border-border">
+        <span class="font-display text-4xl text-parchment">12+</span>
+        <span class="font-mono text-xs text-muted tracking-wider uppercase mt-1">Years Experience</span>
+      </div>
+      <div class="flex flex-col items-center text-center md:border-r md:border-border">
+        <span class="font-display text-4xl text-parchment">500+</span>
+        <span class="font-mono text-xs text-muted tracking-wider uppercase mt-1">Routes Mapped</span>
+      </div>
+      <div class="flex flex-col items-center text-center md:border-r md:border-border">
+        <span class="font-display text-4xl text-parchment">Expert</span>
+        <span class="font-mono text-xs text-muted tracking-wider uppercase mt-1">Local Guides</span>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <span class="font-display text-4xl text-parchment">Full</span>
+        <span class="font-mono text-xs text-muted tracking-wider uppercase mt-1">Gear Included</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="bg-surface noise-overlay py-20 relative overflow-hidden">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+    <h2 class="font-display text-5xl md:text-7xl lg:text-8xl text-parchment mb-4">YOUR NEXT ADVENTURE<br>STARTS HERE</h2>
+    <p class="font-heading text-xl text-muted mb-10 max-w-lg mx-auto">Drop your email. We'll send you route intel, rider stories, and exclusive deals.</p>
+    <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <input type="email" placeholder="your@email.com" class="flex-1 bg-bg border border-border px-5 py-4 font-mono text-sm text-parchment placeholder:text-muted focus:outline-none focus:border-ember" />
+      <button class="bg-ember text-parchment font-heading text-sm tracking-wider uppercase px-8 py-4 hover:scale-[1.02] transition-transform whitespace-nowrap">GET A QUOTE</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-bg border-t border-border py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <h3 class="font-display text-3xl text-parchment mb-2">WILDTRACK</h3>
+        <p class="font-mono text-xs text-muted tracking-wider">// BUILT FOR THOSE WHO<br>// RIDE BEYOND</p>
+      </div>
+      <div>
+        <h5 class="font-heading font-semibold text-parchment uppercase tracking-wider mb-4 text-sm">Explore</h5>
+        <ul class="space-y-2 font-body text-muted text-sm">
+          <li><a href="#tours" class="hover:text-ember transition-colors">All Tours</a></li>
+          <li><a href="#featured" class="hover:text-ember transition-colors">Featured Routes</a></li>
+          <li><a href="#" class="hover:text-ember transition-colors">Custom Trips</a></li>
+          <li><a href="#group-tours" class="hover:text-ember transition-colors">Group Rides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-heading font-semibold text-parchment uppercase tracking-wider mb-4 text-sm">Info</h5>
+        <ul class="space-y-2 font-body text-muted text-sm">
+          <li><a href="#" class="hover:text-ember transition-colors">About Us</a></li>
+          <li><a href="#" class="hover:text-ember transition-colors">Our Bikes</a></li>
+          <li><a href="#" class="hover:text-ember transition-colors">Safety & Gear</a></li>
+          <li><a href="#" class="hover:text-ember transition-colors">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-heading font-semibold text-parchment uppercase tracking-wider mb-4 text-sm">Connect</h5>
+        <p class="text-muted text-sm">Follow us on social media</p>
+      </div>
+    </div>
+    <div class="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-mono text-xs text-muted">© 2026 WILDTRACK MOTO TOURS. ALL RIGHTS RESERVED.</p>
+      <p class="font-mono text-xs text-muted">SAIGON / DA NANG / HA NOI</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WordPress Integration Notes:
+  - Replace Tailwind CDN with your theme's compiled CSS
+  - Replace placeholder images with WordPress featured images using get_the_post_thumbnail()
+  - Tour cards can be generated with a custom post type loop
+  - Email form should connect to your WordPress form plugin (Contact Form 7, WPForms, etc.)
+-->
+</body>
+</html>
