@@ -12,7 +12,7 @@ const FeatureStrip = () => {
   ];
 
   return (
-    <section className="bg-surface border-y border-border py-12">
+    <section className="bg-surface border-y border-border py-12 track-border-top track-border-bottom checkered-accent">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {features.map((f, i) => (

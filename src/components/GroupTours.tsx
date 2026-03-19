@@ -14,7 +14,7 @@ const GroupTours = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="group-tours" className="bg-surface py-20">
+    <section id="group-tours" className="bg-surface py-20 racing-stripe">
       <div className="container mx-auto px-6">
         <div className="mb-12">
           <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">{t.groupTours.tag}</p>
