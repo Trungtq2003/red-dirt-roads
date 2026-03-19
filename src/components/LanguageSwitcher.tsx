@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Globe } from "lucide-react";
 import { useLanguage, languageLabels, type Language } from "@/i18n/LanguageContext";
 
-const langs: Language[] = ["en", "vi", "zh", "ko", "ja"];
+const langs: Language[] = ["en", "bg", "cs", "da", "nl", "et", "fr", "de", "hi", "it", "lv", "no", "pl", "pt", "ro", "ru", "sl", "es", "sv"];
 
 const LanguageSwitcher = () => {
   const { lang, setLang } = useLanguage();
@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
       {open && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          <div className="absolute right-0 top-full mt-2 z-50 bg-card border border-border min-w-[100px] shadow-lg">
+          <div className="absolute right-0 top-full mt-2 z-50 bg-card border border-border min-w-[140px] max-h-[400px] overflow-y-auto shadow-lg">
             {langs.map((l) => (
               <button
                 key={l}
