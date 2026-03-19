@@ -56,9 +56,6 @@ const GroupTours = () => {
         {/* Scroll-to-section CTA buttons */}
         <div className="flex flex-wrap gap-4 justify-center">
           <a href="#tours" className="inline-block bg-primary text-primary-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:scale-[1.02] transition-transform">
-            {t.groupTours.bookGroup}
-          </a>
-          <a href="#tours" className="inline-block border-2 border-foreground/30 text-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:border-primary hover:text-primary transition-colors">
             {t.groupTours.exploreTours}
           </a>
         </div>
