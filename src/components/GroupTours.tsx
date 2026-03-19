@@ -45,7 +45,7 @@ const GroupTours = () => {
                 <div className="flex items-center justify-between">
                   <span className="font-heading text-2xl font-bold text-primary">{tour.price}<span className="text-sm text-muted-foreground">{t.groupTours.perPerson}</span></span>
                   <button className="font-heading text-sm tracking-wider uppercase text-foreground border border-foreground/30 px-4 py-2 hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all">
-                    {t.groupTours.viewDetails}
+                    {t.tourGrid.bookNow}
                   </button>
                 </div>
               </div>
@@ -56,9 +56,6 @@ const GroupTours = () => {
         {/* Scroll-to-section CTA buttons */}
         <div className="flex flex-wrap gap-4 justify-center">
           <a href="#tours" className="inline-block bg-primary text-primary-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:scale-[1.02] transition-transform">
-            {t.groupTours.bookGroup}
-          </a>
-          <a href="#tours" className="inline-block border-2 border-foreground/30 text-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:border-primary hover:text-primary transition-colors">
             {t.groupTours.exploreTours}
           </a>
         </div>
