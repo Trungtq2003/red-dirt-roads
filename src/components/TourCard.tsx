@@ -6,6 +6,7 @@ interface TourCardProps {
   distance: string;
   terrain: string;
   price: string;
+  bookLabel?: string;
 }
 
 const difficultyColors = {
@@ -14,7 +15,7 @@ const difficultyColors = {
   EXTREME: "bg-destructive text-destructive-foreground",
 };
 
-const TourCard = ({ image, name, difficulty, duration, distance, terrain, price }: TourCardProps) => {
+const TourCard = ({ image, name, difficulty, duration, distance, terrain, price, bookLabel = "BOOK NOW →" }: TourCardProps) => {
   return (
     <div className="group bg-card border border-border hover:border-l-4 hover:border-l-primary hover:shadow-[0_0_20px_rgba(212,87,10,0.3)] transition-all duration-300 hover:-translate-y-1">
       <div className="relative overflow-hidden aspect-[4/3]">
@@ -34,7 +35,7 @@ const TourCard = ({ image, name, difficulty, duration, distance, terrain, price 
         <div className="flex items-center justify-between">
           <span className="font-heading text-2xl font-bold text-primary">{price}</span>
           <button className="font-heading text-sm tracking-wider uppercase text-foreground border border-foreground/30 px-4 py-2 hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all">
-            BOOK NOW →
+            {bookLabel}
           </button>
         </div>
       </div>
