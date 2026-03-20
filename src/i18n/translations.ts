@@ -76,7 +76,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// JEĎTE SPOLU", heading: "SKUPINOVÉ TÚRY", subtitle: "Připojte se k dalším jezdcům na nejpopulárnějších trasách.", exploreTours: "PROZKOUMAT VŠECHNY TÚRY", perPerson: "/osoba", minRiders: "Min. jezdců", nextDate: "Další termín" },
   },
   da: {
-    nav: { about: "Om os", contact: "Kontakt", bookNow: "BOOK NU" },
+    nav: { about: "Om os", contact: "Kontakt", bookNow: "BOOK NU", motorbikeTours: "Motorcykelture", dirtbikes: "Dirtbikes", bigBikes: "Store motorcykler" },
     hero: { tagline: "// Eventyret venter bag asfalten", headline1: "KØR HVOR", headline2: "VEJENE ENDER", subtitle: "Guidede motorcykelture gennem Sydøstasiens vildeste stier, bjergpas og junglruter.", bookTour: "BOOK EN TUR", groupTours: "GRUPPETURE" },
     categories: { motorbike: "Motorcykel", dirtbike: "Dirtbike", bigbike: "Stor motorcykel", offroad: "Offroad", jungleTrail: "Junglesti", mountainPass: "Bjergpas" },
     tourGrid: { tag: "// VÆLG DIN RUTE", heading: "VORES TURE", bookNow: "BOOK NU →" },
