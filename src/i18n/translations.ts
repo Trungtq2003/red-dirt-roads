@@ -23,7 +23,7 @@ export const languageLabels: Record<Language, string> = {
 };
 
 type TranslationKeys = {
-  nav: { about: string; contact: string; bookNow: string };
+  nav: { about: string; contact: string; bookNow: string; motorbikeTours: string; dirtbikes: string; bigBikes: string };
   hero: { tagline: string; headline1: string; headline2: string; subtitle: string; bookTour: string; groupTours: string };
   categories: { motorbike: string; dirtbike: string; bigbike: string; offroad: string; jungleTrail: string; mountainPass: string };
   tourGrid: { tag: string; heading: string; bookNow: string };
@@ -36,7 +36,7 @@ type TranslationKeys = {
 };
 
 const en: TranslationKeys = {
-  nav: { about: "About", contact: "Contact", bookNow: "BOOK NOW" },
+  nav: { about: "About", contact: "Contact", bookNow: "BOOK NOW", motorbikeTours: "Motorbike Tours", dirtbikes: "Dirtbikes", bigBikes: "Big Bikes" },
   hero: { tagline: "// Adventure awaits beyond the pavement", headline1: "RIDE WHERE", headline2: "ROADS END", subtitle: "Guided motorbike tours through Southeast Asia's most untamed trails, mountain passes, and jungle routes.", bookTour: "BOOK A TOUR", groupTours: "GROUP TOURS" },
   categories: { motorbike: "Motorbike", dirtbike: "Dirtbike", bigbike: "Bigbike", offroad: "Offroad", jungleTrail: "Jungle Trail", mountainPass: "Mountain Pass" },
   tourGrid: { tag: "// SELECT YOUR ROUTE", heading: "OUR TOURS", bookNow: "BOOK NOW →" },
@@ -52,7 +52,7 @@ const en: TranslationKeys = {
 const translations: Record<Language, TranslationKeys> = {
   en,
   bg: {
-    nav: { about: "За нас", contact: "Контакт", bookNow: "РЕЗЕРВИРАЙ" },
+    nav: { about: "За нас", contact: "Контакт", bookNow: "РЕЗЕРВИРАЙ", motorbikeTours: "Мото турове", dirtbikes: "Ендуро", bigBikes: "Голям мотор" },
     hero: { tagline: "// Приключението чака отвъд асфалта", headline1: "КАРАЙ ТАМ", headline2: "КЪДЕТО ПЪТЯТ СВЪРШВА", subtitle: "Мотоциклетни турове с гид през най-дивите пътеки на Югоизточна Азия.", bookTour: "РЕЗЕРВИРАЙ ТУР", groupTours: "ГРУПОВИ ТУРОВЕ" },
     categories: { motorbike: "Мотоциклет", dirtbike: "Ендуро", bigbike: "Голям мотор", offroad: "Офроуд", jungleTrail: "Джунгла", mountainPass: "Планински проход" },
     tourGrid: { tag: "// ИЗБЕРИ МАРШРУТ", heading: "НАШИТЕ ТУРОВЕ", bookNow: "РЕЗЕРВИРАЙ →" },
@@ -64,7 +64,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// КАРАЙТЕ ЗАЕДНО", heading: "ГРУПОВИ ТУРОВЕ", subtitle: "Присъединете се към други ездачи по най-популярните маршрути.", exploreTours: "РАЗГЛЕДАЙ ВСИЧКИ ТУРОВЕ", perPerson: "/човек", minRiders: "Мин. ездачи", nextDate: "Следваща дата" },
   },
   cs: {
-    nav: { about: "O nás", contact: "Kontakt", bookNow: "REZERVOVAT" },
+    nav: { about: "O nás", contact: "Kontakt", bookNow: "REZERVOVAT", motorbikeTours: "Motocyklové túry", dirtbikes: "Enduro", bigBikes: "Velké motorky" },
     hero: { tagline: "// Dobrodružství čeká za asfaltem", headline1: "JEĎ TAM", headline2: "KDE CESTY KONČÍ", subtitle: "Motocyklové túry s průvodcem přes nejdivočejší stezky jihovýchodní Asie.", bookTour: "REZERVOVAT TÚRU", groupTours: "SKUPINOVÉ TÚRY" },
     categories: { motorbike: "Motocykl", dirtbike: "Enduro", bigbike: "Velký motocykl", offroad: "Offroad", jungleTrail: "Džungle", mountainPass: "Horský průsmyk" },
     tourGrid: { tag: "// VYBER SI TRASU", heading: "NAŠE TÚRY", bookNow: "REZERVOVAT →" },
@@ -76,7 +76,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// JEĎTE SPOLU", heading: "SKUPINOVÉ TÚRY", subtitle: "Připojte se k dalším jezdcům na nejpopulárnějších trasách.", exploreTours: "PROZKOUMAT VŠECHNY TÚRY", perPerson: "/osoba", minRiders: "Min. jezdců", nextDate: "Další termín" },
   },
   da: {
-    nav: { about: "Om os", contact: "Kontakt", bookNow: "BOOK NU" },
+    nav: { about: "Om os", contact: "Kontakt", bookNow: "BOOK NU", motorbikeTours: "Motorcykelture", dirtbikes: "Dirtbikes", bigBikes: "Store motorcykler" },
     hero: { tagline: "// Eventyret venter bag asfalten", headline1: "KØR HVOR", headline2: "VEJENE ENDER", subtitle: "Guidede motorcykelture gennem Sydøstasiens vildeste stier, bjergpas og junglruter.", bookTour: "BOOK EN TUR", groupTours: "GRUPPETURE" },
     categories: { motorbike: "Motorcykel", dirtbike: "Dirtbike", bigbike: "Stor motorcykel", offroad: "Offroad", jungleTrail: "Junglesti", mountainPass: "Bjergpas" },
     tourGrid: { tag: "// VÆLG DIN RUTE", heading: "VORES TURE", bookNow: "BOOK NU →" },
@@ -88,7 +88,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// KØR SAMMEN", heading: "GRUPPETURE", subtitle: "Deltag med andre ryttere på vores mest populære ruter.", exploreTours: "UDFORSK ALLE TURE", perPerson: "/person", minRiders: "Min. ryttere", nextDate: "Næste dato" },
   },
   nl: {
-    nav: { about: "Over ons", contact: "Contact", bookNow: "BOEK NU" },
+    nav: { about: "Over ons", contact: "Contact", bookNow: "BOEK NU", motorbikeTours: "Motortours", dirtbikes: "Dirtbikes", bigBikes: "Grote motoren" },
     hero: { tagline: "// Avontuur wacht voorbij het asfalt", headline1: "RIJ WAAR", headline2: "WEGEN EINDIGEN", subtitle: "Begeleide motortochten door de wildste paden van Zuidoost-Azië.", bookTour: "BOEK EEN TOUR", groupTours: "GROEPSTOURS" },
     categories: { motorbike: "Motor", dirtbike: "Dirtbike", bigbike: "Grote motor", offroad: "Offroad", jungleTrail: "Junglepad", mountainPass: "Bergpas" },
     tourGrid: { tag: "// KIES JE ROUTE", heading: "ONZE TOURS", bookNow: "BOEK NU →" },
@@ -100,7 +100,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// RIJ SAMEN", heading: "GROEPSTOURS", subtitle: "Sluit je aan bij andere rijders op onze populairste routes.", exploreTours: "BEKIJK ALLE TOURS", perPerson: "/persoon", minRiders: "Min. rijders", nextDate: "Volgende datum" },
   },
   et: {
-    nav: { about: "Meist", contact: "Kontakt", bookNow: "BRONEERI" },
+    nav: { about: "Meist", contact: "Kontakt", bookNow: "BRONEERI", motorbikeTours: "Mootorrattamatkad", dirtbikes: "Krossirattad", bigBikes: "Suured mootorrattad" },
     hero: { tagline: "// Seiklus ootab tee lõpus", headline1: "SÕIDA SINNA", headline2: "KUS TEED LÕPPEVAD", subtitle: "Giidiga mootorrattamatkad läbi Kagu-Aasia kõige metsikumate radade.", bookTour: "BRONEERI MATK", groupTours: "GRUPIMATKAD" },
     categories: { motorbike: "Mootorratas", dirtbike: "Krossiratas", bigbike: "Suur mootorratas", offroad: "Maastik", jungleTrail: "Džungli rada", mountainPass: "Mägikuru" },
     tourGrid: { tag: "// VALI OMA MARSRUUT", heading: "MEIE MATKAD", bookNow: "BRONEERI →" },
@@ -112,7 +112,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// SÕIDA KOOS", heading: "GRUPIMATKAD", subtitle: "Liitu teiste sõitjatega meie populaarseimatel marsruutidel.", exploreTours: "VAATA KÕIKI MATKU", perPerson: "/inimene", minRiders: "Min. sõitjaid", nextDate: "Järgmine kuupäev" },
   },
   fr: {
-    nav: { about: "À propos", contact: "Contact", bookNow: "RÉSERVER" },
+    nav: { about: "À propos", contact: "Contact", bookNow: "RÉSERVER", motorbikeTours: "Tours moto", dirtbikes: "Enduro", bigBikes: "Grosses cylindrées" },
     hero: { tagline: "// L'aventure vous attend au-delà du bitume", headline1: "ROULEZ LÀ OÙ", headline2: "LES ROUTES FINISSENT", subtitle: "Tours moto guidés à travers les sentiers les plus sauvages d'Asie du Sud-Est.", bookTour: "RÉSERVER UN TOUR", groupTours: "TOURS DE GROUPE" },
     categories: { motorbike: "Moto", dirtbike: "Enduro", bigbike: "Grosse cylindrée", offroad: "Tout-terrain", jungleTrail: "Piste jungle", mountainPass: "Col de montagne" },
     tourGrid: { tag: "// CHOISISSEZ VOTRE ROUTE", heading: "NOS TOURS", bookNow: "RÉSERVER →" },
@@ -124,7 +124,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// ROULEZ ENSEMBLE", heading: "TOURS DE GROUPE", subtitle: "Rejoignez d'autres pilotes sur nos itinéraires les plus populaires.", exploreTours: "EXPLORER TOUS LES TOURS", perPerson: "/personne", minRiders: "Min. pilotes", nextDate: "Prochaine date" },
   },
   de: {
-    nav: { about: "Über uns", contact: "Kontakt", bookNow: "JETZT BUCHEN" },
+    nav: { about: "Über uns", contact: "Kontakt", bookNow: "JETZT BUCHEN", motorbikeTours: "Motorradtouren", dirtbikes: "Dirtbikes", bigBikes: "Große Motorräder" },
     hero: { tagline: "// Abenteuer wartet jenseits des Asphalts", headline1: "FAHR DORTHIN", headline2: "WO STRASSEN ENDEN", subtitle: "Geführte Motorradtouren durch die wildesten Pfade Südostasiens.", bookTour: "TOUR BUCHEN", groupTours: "GRUPPENTOUREN" },
     categories: { motorbike: "Motorrad", dirtbike: "Dirtbike", bigbike: "Großmotorrad", offroad: "Offroad", jungleTrail: "Dschungelpfad", mountainPass: "Bergpass" },
     tourGrid: { tag: "// WÄHLE DEINE ROUTE", heading: "UNSERE TOUREN", bookNow: "JETZT BUCHEN →" },
@@ -136,7 +136,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// ZUSAMMEN FAHREN", heading: "GRUPPENTOUREN", subtitle: "Schließe dich anderen Fahrern auf unseren beliebtesten Routen an.", exploreTours: "ALLE TOUREN ENTDECKEN", perPerson: "/Person", minRiders: "Min. Fahrer", nextDate: "Nächster Termin" },
   },
   hi: {
-    nav: { about: "हमारे बारे में", contact: "संपर्क", bookNow: "अभी बुक करें" },
+    nav: { about: "हमारे बारे में", contact: "संपर्क", bookNow: "अभी बुक करें", motorbikeTours: "मोटरबाइक टूर", dirtbikes: "डर्टबाइक", bigBikes: "बिग बाइक" },
     hero: { tagline: "// सड़क के पार रोमांच इंतज़ार कर रहा है", headline1: "वहाँ चलो", headline2: "जहाँ सड़कें खत्म होती हैं", subtitle: "दक्षिण-पूर्व एशिया के सबसे जंगली रास्तों पर गाइडेड मोटरबाइक टूर।", bookTour: "टूर बुक करें", groupTours: "ग्रुप टूर" },
     categories: { motorbike: "मोटरबाइक", dirtbike: "डर्टबाइक", bigbike: "बिग बाइक", offroad: "ऑफरोड", jungleTrail: "जंगल ट्रेल", mountainPass: "पहाड़ी दर्रा" },
     tourGrid: { tag: "// अपना रूट चुनें", heading: "हमारे टूर", bookNow: "अभी बुक करें →" },
@@ -148,7 +148,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// साथ चलो", heading: "ग्रुप टूर", subtitle: "हमारे सबसे लोकप्रिय रूट पर अन्य राइडर्स के साथ जुड़ें।", exploreTours: "सभी टूर देखें", perPerson: "/व्यक्ति", minRiders: "न्यूनतम राइडर", nextDate: "अगली तारीख" },
   },
   it: {
-    nav: { about: "Chi siamo", contact: "Contatti", bookNow: "PRENOTA ORA" },
+    nav: { about: "Chi siamo", contact: "Contatti", bookNow: "PRENOTA ORA", motorbikeTours: "Tour in moto", dirtbikes: "Dirtbike", bigBikes: "Moto grossa" },
     hero: { tagline: "// L'avventura ti aspetta oltre l'asfalto", headline1: "GUIDA DOVE", headline2: "LE STRADE FINISCONO", subtitle: "Tour in moto guidati attraverso i sentieri più selvaggi del Sud-Est asiatico.", bookTour: "PRENOTA UN TOUR", groupTours: "TOUR DI GRUPPO" },
     categories: { motorbike: "Moto", dirtbike: "Dirtbike", bigbike: "Moto grossa", offroad: "Fuoristrada", jungleTrail: "Sentiero giungla", mountainPass: "Passo di montagna" },
     tourGrid: { tag: "// SCEGLI IL TUO PERCORSO", heading: "I NOSTRI TOUR", bookNow: "PRENOTA ORA →" },
@@ -160,7 +160,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// GUIDA INSIEME", heading: "TOUR DI GRUPPO", subtitle: "Unisciti ad altri piloti sui nostri percorsi più popolari.", exploreTours: "ESPLORA TUTTI I TOUR", perPerson: "/persona", minRiders: "Min. piloti", nextDate: "Prossima data" },
   },
   lv: {
-    nav: { about: "Par mums", contact: "Kontakti", bookNow: "REZERVĒT" },
+    nav: { about: "Par mums", contact: "Kontakti", bookNow: "REZERVĒT", motorbikeTours: "Motociklu tūri", dirtbikes: "Enduro", bigBikes: "Lieli motocikli" },
     hero: { tagline: "// Piedzīvojums gaida aiz asfalta", headline1: "BRAUC TUR", headline2: "KUR CEĻI BEIDZAS", subtitle: "Vadīti motociklu tūri pa Dienvidaustrumāzijas savvaļas takām.", bookTour: "REZERVĒT TŪRI", groupTours: "GRUPAS TŪRI" },
     categories: { motorbike: "Motocikls", dirtbike: "Enduro", bigbike: "Liels motocikls", offroad: "Bezceļu", jungleTrail: "Džungļu taka", mountainPass: "Kalnu pāreja" },
     tourGrid: { tag: "// IZVĒLIES MARŠRUTU", heading: "MŪSU TŪRI", bookNow: "REZERVĒT →" },
@@ -172,7 +172,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// BRAUCIET KOPĀ", heading: "GRUPAS TŪRI", subtitle: "Pievienojieties citiem braucējiem mūsu populārākajos maršrutos.", exploreTours: "APSKATĪT VISUS TŪRUS", perPerson: "/persona", minRiders: "Min. braucēji", nextDate: "Nākamais datums" },
   },
   no: {
-    nav: { about: "Om oss", contact: "Kontakt", bookNow: "BOOK NÅ" },
+    nav: { about: "Om oss", contact: "Kontakt", bookNow: "BOOK NÅ", motorbikeTours: "Motorsykkelturer", dirtbikes: "Dirtbikes", bigBikes: "Store motorsykler" },
     hero: { tagline: "// Eventyret venter bak asfalten", headline1: "KJØR DIT", headline2: "VEIENE SLUTTER", subtitle: "Guidede motorsykkelturer gjennom Sørøst-Asias villeste stier.", bookTour: "BOOK EN TUR", groupTours: "GRUPPETURER" },
     categories: { motorbike: "Motorsykkel", dirtbike: "Dirtbike", bigbike: "Stor motorsykkel", offroad: "Offroad", jungleTrail: "Jungelsti", mountainPass: "Fjellpass" },
     tourGrid: { tag: "// VELG DIN RUTE", heading: "VÅRE TURER", bookNow: "BOOK NÅ →" },
@@ -184,7 +184,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// KJØR SAMMEN", heading: "GRUPPETURER", subtitle: "Bli med andre ryttere på våre mest populære ruter.", exploreTours: "UTFORSK ALLE TURER", perPerson: "/person", minRiders: "Min. ryttere", nextDate: "Neste dato" },
   },
   pl: {
-    nav: { about: "O nas", contact: "Kontakt", bookNow: "ZAREZERWUJ" },
+    nav: { about: "O nas", contact: "Kontakt", bookNow: "ZAREZERWUJ", motorbikeTours: "Wycieczki motocyklowe", dirtbikes: "Enduro", bigBikes: "Duże motocykle" },
     hero: { tagline: "// Przygoda czeka za asfaltem", headline1: "JEDŹ TAM", headline2: "GDZIE DROGI SIĘ KOŃCZĄ", subtitle: "Motocyklowe wyprawy z przewodnikiem po najdzikszych szlakach Azji Południowo-Wschodniej.", bookTour: "ZAREZERWUJ WYCIECZKĘ", groupTours: "WYCIECZKI GRUPOWE" },
     categories: { motorbike: "Motocykl", dirtbike: "Enduro", bigbike: "Duży motocykl", offroad: "Offroad", jungleTrail: "Szlak dżungli", mountainPass: "Przełęcz górska" },
     tourGrid: { tag: "// WYBIERZ TRASĘ", heading: "NASZE WYCIECZKI", bookNow: "ZAREZERWUJ →" },
@@ -196,7 +196,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// JEDŹCIE RAZEM", heading: "WYCIECZKI GRUPOWE", subtitle: "Dołącz do innych jeźdźców na naszych najpopularniejszych trasach.", exploreTours: "PRZEGLĄDAJ WSZYSTKIE WYCIECZKI", perPerson: "/osoba", minRiders: "Min. jeźdźców", nextDate: "Następny termin" },
   },
   pt: {
-    nav: { about: "Sobre", contact: "Contato", bookNow: "RESERVE AGORA" },
+    nav: { about: "Sobre", contact: "Contato", bookNow: "RESERVE AGORA", motorbikeTours: "Passeios de moto", dirtbikes: "Dirtbikes", bigBikes: "Motos grandes" },
     hero: { tagline: "// A aventura espera além do asfalto", headline1: "PILOTE ONDE", headline2: "AS ESTRADAS ACABAM", subtitle: "Passeios de moto guiados pelas trilhas mais selvagens do Sudeste Asiático.", bookTour: "RESERVE UM TOUR", groupTours: "TOURS EM GRUPO" },
     categories: { motorbike: "Moto", dirtbike: "Dirtbike", bigbike: "Moto grande", offroad: "Offroad", jungleTrail: "Trilha na selva", mountainPass: "Passagem de montanha" },
     tourGrid: { tag: "// ESCOLHA SUA ROTA", heading: "NOSSOS TOURS", bookNow: "RESERVE AGORA →" },
@@ -208,7 +208,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// PILOTE JUNTO", heading: "TOURS EM GRUPO", subtitle: "Junte-se a outros pilotos nas nossas rotas mais populares.", exploreTours: "EXPLORAR TODOS OS TOURS", perPerson: "/pessoa", minRiders: "Mín. pilotos", nextDate: "Próxima data" },
   },
   ro: {
-    nav: { about: "Despre", contact: "Contact", bookNow: "REZERVĂ ACUM" },
+    nav: { about: "Despre", contact: "Contact", bookNow: "REZERVĂ ACUM", motorbikeTours: "Tururi moto", dirtbikes: "Enduro", bigBikes: "Motociclete mari" },
     hero: { tagline: "// Aventura te așteaptă dincolo de asfalt", headline1: "MERGI ACOLO", headline2: "UNDE DRUMURILE SE TERMINĂ", subtitle: "Tururi moto ghidate pe cele mai sălbatice trasee din Asia de Sud-Est.", bookTour: "REZERVĂ UN TUR", groupTours: "TURURI DE GRUP" },
     categories: { motorbike: "Motocicletă", dirtbike: "Enduro", bigbike: "Motocicletă mare", offroad: "Offroad", jungleTrail: "Traseu junglă", mountainPass: "Pas de munte" },
     tourGrid: { tag: "// ALEGE-ȚI TRASEUL", heading: "TURURILE NOASTRE", bookNow: "REZERVĂ ACUM →" },
@@ -220,7 +220,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// MERGEȚI ÎMPREUNĂ", heading: "TURURI DE GRUP", subtitle: "Alătură-te altor piloți pe cele mai populare trasee.", exploreTours: "EXPLOREAZĂ TOATE TURURILE", perPerson: "/persoană", minRiders: "Min. piloți", nextDate: "Următoarea dată" },
   },
   ru: {
-    nav: { about: "О нас", contact: "Контакты", bookNow: "ЗАБРОНИРОВАТЬ" },
+    nav: { about: "О нас", contact: "Контакты", bookNow: "ЗАБРОНИРОВАТЬ", motorbikeTours: "Мототуры", dirtbikes: "Эндуро", bigBikes: "Большие мотоциклы" },
     hero: { tagline: "// Приключение ждёт за пределами асфальта", headline1: "ЕЗЖАЙ ТУДА", headline2: "ГДЕ ДОРОГИ КОНЧАЮТСЯ", subtitle: "Мотоциклетные туры с гидом по самым диким тропам Юго-Восточной Азии.", bookTour: "ЗАБРОНИРОВАТЬ ТУР", groupTours: "ГРУППОВЫЕ ТУРЫ" },
     categories: { motorbike: "Мотоцикл", dirtbike: "Эндуро", bigbike: "Большой мотоцикл", offroad: "Бездорожье", jungleTrail: "Джунгли", mountainPass: "Горный перевал" },
     tourGrid: { tag: "// ВЫБЕРИ МАРШРУТ", heading: "НАШИ ТУРЫ", bookNow: "ЗАБРОНИРОВАТЬ →" },
@@ -232,7 +232,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// ВМЕСТЕ В ПУТЬ", heading: "ГРУППОВЫЕ ТУРЫ", subtitle: "Присоединяйся к другим райдерам на самых популярных маршрутах.", exploreTours: "СМОТРЕТЬ ВСЕ ТУРЫ", perPerson: "/чел.", minRiders: "Мин. райдеров", nextDate: "Следующая дата" },
   },
   sl: {
-    nav: { about: "O nas", contact: "Kontakt", bookNow: "REZERVIRAJ" },
+    nav: { about: "O nas", contact: "Kontakt", bookNow: "REZERVIRAJ", motorbikeTours: "Motoristični izleti", dirtbikes: "Enduro", bigBikes: "Veliki motorji" },
     hero: { tagline: "// Pustolovščina čaka onkraj asfalta", headline1: "PELJI TUDA", headline2: "KJER SE CESTE KONČAJO", subtitle: "Vodeni motoristični izleti po najdivjih poteh Jugovzhodne Azije.", bookTour: "REZERVIRAJ IZLET", groupTours: "SKUPINSKI IZLETI" },
     categories: { motorbike: "Motor", dirtbike: "Enduro", bigbike: "Velik motor", offroad: "Terenci", jungleTrail: "Džungelska pot", mountainPass: "Gorski prelaz" },
     tourGrid: { tag: "// IZBERI SVOJO POT", heading: "NAŠI IZLETI", bookNow: "REZERVIRAJ →" },
@@ -244,7 +244,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// VOZITE SKUPAJ", heading: "SKUPINSKI IZLETI", subtitle: "Pridruži se drugim voznikom na naših najpopularnejših poteh.", exploreTours: "RAZIŠČI VSE IZLETE", perPerson: "/oseba", minRiders: "Min. voznikov", nextDate: "Naslednji datum" },
   },
   es: {
-    nav: { about: "Nosotros", contact: "Contacto", bookNow: "RESERVAR AHORA" },
+    nav: { about: "Nosotros", contact: "Contacto", bookNow: "RESERVAR AHORA", motorbikeTours: "Tours en moto", dirtbikes: "Dirtbikes", bigBikes: "Motos grandes" },
     hero: { tagline: "// La aventura te espera más allá del asfalto", headline1: "CONDUCE DONDE", headline2: "LOS CAMINOS TERMINAN", subtitle: "Tours en moto guiados por los senderos más salvajes del Sudeste Asiático.", bookTour: "RESERVAR UN TOUR", groupTours: "TOURS GRUPALES" },
     categories: { motorbike: "Moto", dirtbike: "Dirtbike", bigbike: "Moto grande", offroad: "Todoterreno", jungleTrail: "Sendero selvático", mountainPass: "Paso de montaña" },
     tourGrid: { tag: "// ELIGE TU RUTA", heading: "NUESTROS TOURS", bookNow: "RESERVAR AHORA →" },
@@ -256,7 +256,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// CONDUZCAN JUNTOS", heading: "TOURS GRUPALES", subtitle: "Únete a otros pilotos en nuestras rutas más populares.", exploreTours: "EXPLORAR TODOS LOS TOURS", perPerson: "/persona", minRiders: "Mín. pilotos", nextDate: "Próxima fecha" },
   },
   sv: {
-    nav: { about: "Om oss", contact: "Kontakt", bookNow: "BOKA NU" },
+    nav: { about: "Om oss", contact: "Kontakt", bookNow: "BOKA NU", motorbikeTours: "Motorcykelturer", dirtbikes: "Dirtbikes", bigBikes: "Stora motorcyklar" },
     hero: { tagline: "// Äventyret väntar bortom asfalten", headline1: "KÖR DIT", headline2: "VÄGARNA SLUTAR", subtitle: "Guidade motorcykelturer genom Sydostasiens vildaste stigar.", bookTour: "BOKA EN TUR", groupTours: "GRUPPTURER" },
     categories: { motorbike: "Motorcykel", dirtbike: "Dirtbike", bigbike: "Stor motorcykel", offroad: "Offroad", jungleTrail: "Djungelstig", mountainPass: "Bergspass" },
     tourGrid: { tag: "// VÄLJ DIN RUTT", heading: "VÅRA TURER", bookNow: "BOKA NU →" },
