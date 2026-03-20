@@ -196,7 +196,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// JEDŹCIE RAZEM", heading: "WYCIECZKI GRUPOWE", subtitle: "Dołącz do innych jeźdźców na naszych najpopularniejszych trasach.", exploreTours: "PRZEGLĄDAJ WSZYSTKIE WYCIECZKI", perPerson: "/osoba", minRiders: "Min. jeźdźców", nextDate: "Następny termin" },
   },
   pt: {
-    nav: { about: "Sobre", contact: "Contato", bookNow: "RESERVE AGORA" },
+    nav: { about: "Sobre", contact: "Contato", bookNow: "RESERVE AGORA", motorbikeTours: "Passeios de moto", dirtbikes: "Dirtbikes", bigBikes: "Motos grandes" },
     hero: { tagline: "// A aventura espera além do asfalto", headline1: "PILOTE ONDE", headline2: "AS ESTRADAS ACABAM", subtitle: "Passeios de moto guiados pelas trilhas mais selvagens do Sudeste Asiático.", bookTour: "RESERVE UM TOUR", groupTours: "TOURS EM GRUPO" },
     categories: { motorbike: "Moto", dirtbike: "Dirtbike", bigbike: "Moto grande", offroad: "Offroad", jungleTrail: "Trilha na selva", mountainPass: "Passagem de montanha" },
     tourGrid: { tag: "// ESCOLHA SUA ROTA", heading: "NOSSOS TOURS", bookNow: "RESERVE AGORA →" },
