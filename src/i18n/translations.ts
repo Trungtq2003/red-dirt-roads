@@ -136,7 +136,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// ZUSAMMEN FAHREN", heading: "GRUPPENTOUREN", subtitle: "Schließe dich anderen Fahrern auf unseren beliebtesten Routen an.", exploreTours: "ALLE TOUREN ENTDECKEN", perPerson: "/Person", minRiders: "Min. Fahrer", nextDate: "Nächster Termin" },
   },
   hi: {
-    nav: { about: "हमारे बारे में", contact: "संपर्क", bookNow: "अभी बुक करें" },
+    nav: { about: "हमारे बारे में", contact: "संपर्क", bookNow: "अभी बुक करें", motorbikeTours: "मोटरबाइक टूर", dirtbikes: "डर्टबाइक", bigBikes: "बिग बाइक" },
     hero: { tagline: "// सड़क के पार रोमांच इंतज़ार कर रहा है", headline1: "वहाँ चलो", headline2: "जहाँ सड़कें खत्म होती हैं", subtitle: "दक्षिण-पूर्व एशिया के सबसे जंगली रास्तों पर गाइडेड मोटरबाइक टूर।", bookTour: "टूर बुक करें", groupTours: "ग्रुप टूर" },
     categories: { motorbike: "मोटरबाइक", dirtbike: "डर्टबाइक", bigbike: "बिग बाइक", offroad: "ऑफरोड", jungleTrail: "जंगल ट्रेल", mountainPass: "पहाड़ी दर्रा" },
     tourGrid: { tag: "// अपना रूट चुनें", heading: "हमारे टूर", bookNow: "अभी बुक करें →" },
