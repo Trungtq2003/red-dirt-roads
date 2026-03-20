@@ -184,7 +184,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// KJØR SAMMEN", heading: "GRUPPETURER", subtitle: "Bli med andre ryttere på våre mest populære ruter.", exploreTours: "UTFORSK ALLE TURER", perPerson: "/person", minRiders: "Min. ryttere", nextDate: "Neste dato" },
   },
   pl: {
-    nav: { about: "O nas", contact: "Kontakt", bookNow: "ZAREZERWUJ" },
+    nav: { about: "O nas", contact: "Kontakt", bookNow: "ZAREZERWUJ", motorbikeTours: "Wycieczki motocyklowe", dirtbikes: "Enduro", bigBikes: "Duże motocykle" },
     hero: { tagline: "// Przygoda czeka za asfaltem", headline1: "JEDŹ TAM", headline2: "GDZIE DROGI SIĘ KOŃCZĄ", subtitle: "Motocyklowe wyprawy z przewodnikiem po najdzikszych szlakach Azji Południowo-Wschodniej.", bookTour: "ZAREZERWUJ WYCIECZKĘ", groupTours: "WYCIECZKI GRUPOWE" },
     categories: { motorbike: "Motocykl", dirtbike: "Enduro", bigbike: "Duży motocykl", offroad: "Offroad", jungleTrail: "Szlak dżungli", mountainPass: "Przełęcz górska" },
     tourGrid: { tag: "// WYBIERZ TRASĘ", heading: "NASZE WYCIECZKI", bookNow: "ZAREZERWUJ →" },
