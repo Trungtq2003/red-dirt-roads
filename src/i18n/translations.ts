@@ -220,7 +220,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// MERGEȚI ÎMPREUNĂ", heading: "TURURI DE GRUP", subtitle: "Alătură-te altor piloți pe cele mai populare trasee.", exploreTours: "EXPLOREAZĂ TOATE TURURILE", perPerson: "/persoană", minRiders: "Min. piloți", nextDate: "Următoarea dată" },
   },
   ru: {
-    nav: { about: "О нас", contact: "Контакты", bookNow: "ЗАБРОНИРОВАТЬ" },
+    nav: { about: "О нас", contact: "Контакты", bookNow: "ЗАБРОНИРОВАТЬ", motorbikeTours: "Мототуры", dirtbikes: "Эндуро", bigBikes: "Большие мотоциклы" },
     hero: { tagline: "// Приключение ждёт за пределами асфальта", headline1: "ЕЗЖАЙ ТУДА", headline2: "ГДЕ ДОРОГИ КОНЧАЮТСЯ", subtitle: "Мотоциклетные туры с гидом по самым диким тропам Юго-Восточной Азии.", bookTour: "ЗАБРОНИРОВАТЬ ТУР", groupTours: "ГРУППОВЫЕ ТУРЫ" },
     categories: { motorbike: "Мотоцикл", dirtbike: "Эндуро", bigbike: "Большой мотоцикл", offroad: "Бездорожье", jungleTrail: "Джунгли", mountainPass: "Горный перевал" },
     tourGrid: { tag: "// ВЫБЕРИ МАРШРУТ", heading: "НАШИ ТУРЫ", bookNow: "ЗАБРОНИРОВАТЬ →" },
