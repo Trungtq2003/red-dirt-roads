@@ -100,7 +100,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// RIJ SAMEN", heading: "GROEPSTOURS", subtitle: "Sluit je aan bij andere rijders op onze populairste routes.", exploreTours: "BEKIJK ALLE TOURS", perPerson: "/persoon", minRiders: "Min. rijders", nextDate: "Volgende datum" },
   },
   et: {
-    nav: { about: "Meist", contact: "Kontakt", bookNow: "BRONEERI" },
+    nav: { about: "Meist", contact: "Kontakt", bookNow: "BRONEERI", motorbikeTours: "Mootorrattamatkad", dirtbikes: "Krossirattad", bigBikes: "Suured mootorrattad" },
     hero: { tagline: "// Seiklus ootab tee lõpus", headline1: "SÕIDA SINNA", headline2: "KUS TEED LÕPPEVAD", subtitle: "Giidiga mootorrattamatkad läbi Kagu-Aasia kõige metsikumate radade.", bookTour: "BRONEERI MATK", groupTours: "GRUPIMATKAD" },
     categories: { motorbike: "Mootorratas", dirtbike: "Krossiratas", bigbike: "Suur mootorratas", offroad: "Maastik", jungleTrail: "Džungli rada", mountainPass: "Mägikuru" },
     tourGrid: { tag: "// VALI OMA MARSRUUT", heading: "MEIE MATKAD", bookNow: "BRONEERI →" },
