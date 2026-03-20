@@ -160,7 +160,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// GUIDA INSIEME", heading: "TOUR DI GRUPPO", subtitle: "Unisciti ad altri piloti sui nostri percorsi più popolari.", exploreTours: "ESPLORA TUTTI I TOUR", perPerson: "/persona", minRiders: "Min. piloti", nextDate: "Prossima data" },
   },
   lv: {
-    nav: { about: "Par mums", contact: "Kontakti", bookNow: "REZERVĒT" },
+    nav: { about: "Par mums", contact: "Kontakti", bookNow: "REZERVĒT", motorbikeTours: "Motociklu tūri", dirtbikes: "Enduro", bigBikes: "Lieli motocikli" },
     hero: { tagline: "// Piedzīvojums gaida aiz asfalta", headline1: "BRAUC TUR", headline2: "KUR CEĻI BEIDZAS", subtitle: "Vadīti motociklu tūri pa Dienvidaustrumāzijas savvaļas takām.", bookTour: "REZERVĒT TŪRI", groupTours: "GRUPAS TŪRI" },
     categories: { motorbike: "Motocikls", dirtbike: "Enduro", bigbike: "Liels motocikls", offroad: "Bezceļu", jungleTrail: "Džungļu taka", mountainPass: "Kalnu pāreja" },
     tourGrid: { tag: "// IZVĒLIES MARŠRUTU", heading: "MŪSU TŪRI", bookNow: "REZERVĒT →" },
