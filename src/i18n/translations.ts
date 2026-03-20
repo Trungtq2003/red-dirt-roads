@@ -148,7 +148,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// साथ चलो", heading: "ग्रुप टूर", subtitle: "हमारे सबसे लोकप्रिय रूट पर अन्य राइडर्स के साथ जुड़ें।", exploreTours: "सभी टूर देखें", perPerson: "/व्यक्ति", minRiders: "न्यूनतम राइडर", nextDate: "अगली तारीख" },
   },
   it: {
-    nav: { about: "Chi siamo", contact: "Contatti", bookNow: "PRENOTA ORA" },
+    nav: { about: "Chi siamo", contact: "Contatti", bookNow: "PRENOTA ORA", motorbikeTours: "Tour in moto", dirtbikes: "Dirtbike", bigBikes: "Moto grossa" },
     hero: { tagline: "// L'avventura ti aspetta oltre l'asfalto", headline1: "GUIDA DOVE", headline2: "LE STRADE FINISCONO", subtitle: "Tour in moto guidati attraverso i sentieri più selvaggi del Sud-Est asiatico.", bookTour: "PRENOTA UN TOUR", groupTours: "TOUR DI GRUPPO" },
     categories: { motorbike: "Moto", dirtbike: "Dirtbike", bigbike: "Moto grossa", offroad: "Fuoristrada", jungleTrail: "Sentiero giungla", mountainPass: "Passo di montagna" },
     tourGrid: { tag: "// SCEGLI IL TUO PERCORSO", heading: "I NOSTRI TOUR", bookNow: "PRENOTA ORA →" },
