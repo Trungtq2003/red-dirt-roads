@@ -256,7 +256,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// CONDUZCAN JUNTOS", heading: "TOURS GRUPALES", subtitle: "Únete a otros pilotos en nuestras rutas más populares.", exploreTours: "EXPLORAR TODOS LOS TOURS", perPerson: "/persona", minRiders: "Mín. pilotos", nextDate: "Próxima fecha" },
   },
   sv: {
-    nav: { about: "Om oss", contact: "Kontakt", bookNow: "BOKA NU" },
+    nav: { about: "Om oss", contact: "Kontakt", bookNow: "BOKA NU", motorbikeTours: "Motorcykelturer", dirtbikes: "Dirtbikes", bigBikes: "Stora motorcyklar" },
     hero: { tagline: "// Äventyret väntar bortom asfalten", headline1: "KÖR DIT", headline2: "VÄGARNA SLUTAR", subtitle: "Guidade motorcykelturer genom Sydostasiens vildaste stigar.", bookTour: "BOKA EN TUR", groupTours: "GRUPPTURER" },
     categories: { motorbike: "Motorcykel", dirtbike: "Dirtbike", bigbike: "Stor motorcykel", offroad: "Offroad", jungleTrail: "Djungelstig", mountainPass: "Bergspass" },
     tourGrid: { tag: "// VÄLJ DIN RUTT", heading: "VÅRA TURER", bookNow: "BOKA NU →" },
