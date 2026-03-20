@@ -36,7 +36,7 @@ type TranslationKeys = {
 };
 
 const en: TranslationKeys = {
-  nav: { about: "About", contact: "Contact", bookNow: "BOOK NOW" },
+  nav: { about: "About", contact: "Contact", bookNow: "BOOK NOW", motorbikeTours: "Motorbike Tours", dirtbikes: "Dirtbikes", bigBikes: "Big Bikes" },
   hero: { tagline: "// Adventure awaits beyond the pavement", headline1: "RIDE WHERE", headline2: "ROADS END", subtitle: "Guided motorbike tours through Southeast Asia's most untamed trails, mountain passes, and jungle routes.", bookTour: "BOOK A TOUR", groupTours: "GROUP TOURS" },
   categories: { motorbike: "Motorbike", dirtbike: "Dirtbike", bigbike: "Bigbike", offroad: "Offroad", jungleTrail: "Jungle Trail", mountainPass: "Mountain Pass" },
   tourGrid: { tag: "// SELECT YOUR ROUTE", heading: "OUR TOURS", bookNow: "BOOK NOW →" },
