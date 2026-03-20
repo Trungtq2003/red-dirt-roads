@@ -232,7 +232,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// ВМЕСТЕ В ПУТЬ", heading: "ГРУППОВЫЕ ТУРЫ", subtitle: "Присоединяйся к другим райдерам на самых популярных маршрутах.", exploreTours: "СМОТРЕТЬ ВСЕ ТУРЫ", perPerson: "/чел.", minRiders: "Мин. райдеров", nextDate: "Следующая дата" },
   },
   sl: {
-    nav: { about: "O nas", contact: "Kontakt", bookNow: "REZERVIRAJ" },
+    nav: { about: "O nas", contact: "Kontakt", bookNow: "REZERVIRAJ", motorbikeTours: "Motoristični izleti", dirtbikes: "Enduro", bigBikes: "Veliki motorji" },
     hero: { tagline: "// Pustolovščina čaka onkraj asfalta", headline1: "PELJI TUDA", headline2: "KJER SE CESTE KONČAJO", subtitle: "Vodeni motoristični izleti po najdivjih poteh Jugovzhodne Azije.", bookTour: "REZERVIRAJ IZLET", groupTours: "SKUPINSKI IZLETI" },
     categories: { motorbike: "Motor", dirtbike: "Enduro", bigbike: "Velik motor", offroad: "Terenci", jungleTrail: "Džungelska pot", mountainPass: "Gorski prelaz" },
     tourGrid: { tag: "// IZBERI SVOJO POT", heading: "NAŠI IZLETI", bookNow: "REZERVIRAJ →" },
