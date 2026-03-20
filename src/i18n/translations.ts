@@ -23,7 +23,7 @@ export const languageLabels: Record<Language, string> = {
 };
 
 type TranslationKeys = {
-  nav: { about: string; contact: string; bookNow: string };
+  nav: { about: string; contact: string; bookNow: string; motorbikeTours: string; dirtbikes: string; bigBikes: string };
   hero: { tagline: string; headline1: string; headline2: string; subtitle: string; bookTour: string; groupTours: string };
   categories: { motorbike: string; dirtbike: string; bigbike: string; offroad: string; jungleTrail: string; mountainPass: string };
   tourGrid: { tag: string; heading: string; bookNow: string };
