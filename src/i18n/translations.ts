@@ -244,7 +244,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// VOZITE SKUPAJ", heading: "SKUPINSKI IZLETI", subtitle: "Pridruži se drugim voznikom na naših najpopularnejših poteh.", exploreTours: "RAZIŠČI VSE IZLETE", perPerson: "/oseba", minRiders: "Min. voznikov", nextDate: "Naslednji datum" },
   },
   es: {
-    nav: { about: "Nosotros", contact: "Contacto", bookNow: "RESERVAR AHORA" },
+    nav: { about: "Nosotros", contact: "Contacto", bookNow: "RESERVAR AHORA", motorbikeTours: "Tours en moto", dirtbikes: "Dirtbikes", bigBikes: "Motos grandes" },
     hero: { tagline: "// La aventura te espera más allá del asfalto", headline1: "CONDUCE DONDE", headline2: "LOS CAMINOS TERMINAN", subtitle: "Tours en moto guiados por los senderos más salvajes del Sudeste Asiático.", bookTour: "RESERVAR UN TOUR", groupTours: "TOURS GRUPALES" },
     categories: { motorbike: "Moto", dirtbike: "Dirtbike", bigbike: "Moto grande", offroad: "Todoterreno", jungleTrail: "Sendero selvático", mountainPass: "Paso de montaña" },
     tourGrid: { tag: "// ELIGE TU RUTA", heading: "NUESTROS TOURS", bookNow: "RESERVAR AHORA →" },
