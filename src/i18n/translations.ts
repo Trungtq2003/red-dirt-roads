@@ -88,7 +88,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// KØR SAMMEN", heading: "GRUPPETURE", subtitle: "Deltag med andre ryttere på vores mest populære ruter.", exploreTours: "UDFORSK ALLE TURE", perPerson: "/person", minRiders: "Min. ryttere", nextDate: "Næste dato" },
   },
   nl: {
-    nav: { about: "Over ons", contact: "Contact", bookNow: "BOEK NU" },
+    nav: { about: "Over ons", contact: "Contact", bookNow: "BOEK NU", motorbikeTours: "Motortours", dirtbikes: "Dirtbikes", bigBikes: "Grote motoren" },
     hero: { tagline: "// Avontuur wacht voorbij het asfalt", headline1: "RIJ WAAR", headline2: "WEGEN EINDIGEN", subtitle: "Begeleide motortochten door de wildste paden van Zuidoost-Azië.", bookTour: "BOEK EEN TOUR", groupTours: "GROEPSTOURS" },
     categories: { motorbike: "Motor", dirtbike: "Dirtbike", bigbike: "Grote motor", offroad: "Offroad", jungleTrail: "Junglepad", mountainPass: "Bergpas" },
     tourGrid: { tag: "// KIES JE ROUTE", heading: "ONZE TOURS", bookNow: "BOEK NU →" },
