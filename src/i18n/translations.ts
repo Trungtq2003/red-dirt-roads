@@ -208,7 +208,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// PILOTE JUNTO", heading: "TOURS EM GRUPO", subtitle: "Junte-se a outros pilotos nas nossas rotas mais populares.", exploreTours: "EXPLORAR TODOS OS TOURS", perPerson: "/pessoa", minRiders: "Mín. pilotos", nextDate: "Próxima data" },
   },
   ro: {
-    nav: { about: "Despre", contact: "Contact", bookNow: "REZERVĂ ACUM" },
+    nav: { about: "Despre", contact: "Contact", bookNow: "REZERVĂ ACUM", motorbikeTours: "Tururi moto", dirtbikes: "Enduro", bigBikes: "Motociclete mari" },
     hero: { tagline: "// Aventura te așteaptă dincolo de asfalt", headline1: "MERGI ACOLO", headline2: "UNDE DRUMURILE SE TERMINĂ", subtitle: "Tururi moto ghidate pe cele mai sălbatice trasee din Asia de Sud-Est.", bookTour: "REZERVĂ UN TUR", groupTours: "TURURI DE GRUP" },
     categories: { motorbike: "Motocicletă", dirtbike: "Enduro", bigbike: "Motocicletă mare", offroad: "Offroad", jungleTrail: "Traseu junglă", mountainPass: "Pas de munte" },
     tourGrid: { tag: "// ALEGE-ȚI TRASEUL", heading: "TURURILE NOASTRE", bookNow: "REZERVĂ ACUM →" },
