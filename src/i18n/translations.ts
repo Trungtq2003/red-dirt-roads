@@ -52,7 +52,7 @@ const en: TranslationKeys = {
 const translations: Record<Language, TranslationKeys> = {
   en,
   bg: {
-    nav: { about: "За нас", contact: "Контакт", bookNow: "РЕЗЕРВИРАЙ" },
+    nav: { about: "За нас", contact: "Контакт", bookNow: "РЕЗЕРВИРАЙ", motorbikeTours: "Мото турове", dirtbikes: "Ендуро", bigBikes: "Голям мотор" },
     hero: { tagline: "// Приключението чака отвъд асфалта", headline1: "КАРАЙ ТАМ", headline2: "КЪДЕТО ПЪТЯТ СВЪРШВА", subtitle: "Мотоциклетни турове с гид през най-дивите пътеки на Югоизточна Азия.", bookTour: "РЕЗЕРВИРАЙ ТУР", groupTours: "ГРУПОВИ ТУРОВЕ" },
     categories: { motorbike: "Мотоциклет", dirtbike: "Ендуро", bigbike: "Голям мотор", offroad: "Офроуд", jungleTrail: "Джунгла", mountainPass: "Планински проход" },
     tourGrid: { tag: "// ИЗБЕРИ МАРШРУТ", heading: "НАШИТЕ ТУРОВЕ", bookNow: "РЕЗЕРВИРАЙ →" },
