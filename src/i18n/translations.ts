@@ -112,7 +112,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// SÕIDA KOOS", heading: "GRUPIMATKAD", subtitle: "Liitu teiste sõitjatega meie populaarseimatel marsruutidel.", exploreTours: "VAATA KÕIKI MATKU", perPerson: "/inimene", minRiders: "Min. sõitjaid", nextDate: "Järgmine kuupäev" },
   },
   fr: {
-    nav: { about: "À propos", contact: "Contact", bookNow: "RÉSERVER" },
+    nav: { about: "À propos", contact: "Contact", bookNow: "RÉSERVER", motorbikeTours: "Tours moto", dirtbikes: "Enduro", bigBikes: "Grosses cylindrées" },
     hero: { tagline: "// L'aventure vous attend au-delà du bitume", headline1: "ROULEZ LÀ OÙ", headline2: "LES ROUTES FINISSENT", subtitle: "Tours moto guidés à travers les sentiers les plus sauvages d'Asie du Sud-Est.", bookTour: "RÉSERVER UN TOUR", groupTours: "TOURS DE GROUPE" },
     categories: { motorbike: "Moto", dirtbike: "Enduro", bigbike: "Grosse cylindrée", offroad: "Tout-terrain", jungleTrail: "Piste jungle", mountainPass: "Col de montagne" },
     tourGrid: { tag: "// CHOISISSEZ VOTRE ROUTE", heading: "NOS TOURS", bookNow: "RÉSERVER →" },
