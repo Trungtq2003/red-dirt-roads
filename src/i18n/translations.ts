@@ -124,7 +124,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// ROULEZ ENSEMBLE", heading: "TOURS DE GROUPE", subtitle: "Rejoignez d'autres pilotes sur nos itinéraires les plus populaires.", exploreTours: "EXPLORER TOUS LES TOURS", perPerson: "/personne", minRiders: "Min. pilotes", nextDate: "Prochaine date" },
   },
   de: {
-    nav: { about: "Über uns", contact: "Kontakt", bookNow: "JETZT BUCHEN" },
+    nav: { about: "Über uns", contact: "Kontakt", bookNow: "JETZT BUCHEN", motorbikeTours: "Motorradtouren", dirtbikes: "Dirtbikes", bigBikes: "Große Motorräder" },
     hero: { tagline: "// Abenteuer wartet jenseits des Asphalts", headline1: "FAHR DORTHIN", headline2: "WO STRASSEN ENDEN", subtitle: "Geführte Motorradtouren durch die wildesten Pfade Südostasiens.", bookTour: "TOUR BUCHEN", groupTours: "GRUPPENTOUREN" },
     categories: { motorbike: "Motorrad", dirtbike: "Dirtbike", bigbike: "Großmotorrad", offroad: "Offroad", jungleTrail: "Dschungelpfad", mountainPass: "Bergpass" },
     tourGrid: { tag: "// WÄHLE DEINE ROUTE", heading: "UNSERE TOUREN", bookNow: "JETZT BUCHEN →" },
