@@ -172,7 +172,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// BRAUCIET KOPĀ", heading: "GRUPAS TŪRI", subtitle: "Pievienojieties citiem braucējiem mūsu populārākajos maršrutos.", exploreTours: "APSKATĪT VISUS TŪRUS", perPerson: "/persona", minRiders: "Min. braucēji", nextDate: "Nākamais datums" },
   },
   no: {
-    nav: { about: "Om oss", contact: "Kontakt", bookNow: "BOOK NÅ" },
+    nav: { about: "Om oss", contact: "Kontakt", bookNow: "BOOK NÅ", motorbikeTours: "Motorsykkelturer", dirtbikes: "Dirtbikes", bigBikes: "Store motorsykler" },
     hero: { tagline: "// Eventyret venter bak asfalten", headline1: "KJØR DIT", headline2: "VEIENE SLUTTER", subtitle: "Guidede motorsykkelturer gjennom Sørøst-Asias villeste stier.", bookTour: "BOOK EN TUR", groupTours: "GRUPPETURER" },
     categories: { motorbike: "Motorsykkel", dirtbike: "Dirtbike", bigbike: "Stor motorsykkel", offroad: "Offroad", jungleTrail: "Jungelsti", mountainPass: "Fjellpass" },
     tourGrid: { tag: "// VELG DIN RUTE", heading: "VÅRE TURER", bookNow: "BOOK NÅ →" },
