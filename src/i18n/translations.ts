@@ -64,7 +64,7 @@ const translations: Record<Language, TranslationKeys> = {
     groupTours: { tag: "// КАРАЙТЕ ЗАЕДНО", heading: "ГРУПОВИ ТУРОВЕ", subtitle: "Присъединете се към други ездачи по най-популярните маршрути.", exploreTours: "РАЗГЛЕДАЙ ВСИЧКИ ТУРОВЕ", perPerson: "/човек", minRiders: "Мин. ездачи", nextDate: "Следваща дата" },
   },
   cs: {
-    nav: { about: "O nás", contact: "Kontakt", bookNow: "REZERVOVAT" },
+    nav: { about: "O nás", contact: "Kontakt", bookNow: "REZERVOVAT", motorbikeTours: "Motocyklové túry", dirtbikes: "Enduro", bigBikes: "Velké motorky" },
     hero: { tagline: "// Dobrodružství čeká za asfaltem", headline1: "JEĎ TAM", headline2: "KDE CESTY KONČÍ", subtitle: "Motocyklové túry s průvodcem přes nejdivočejší stezky jihovýchodní Asie.", bookTour: "REZERVOVAT TÚRU", groupTours: "SKUPINOVÉ TÚRY" },
     categories: { motorbike: "Motocykl", dirtbike: "Enduro", bigbike: "Velký motocykl", offroad: "Offroad", jungleTrail: "Džungle", mountainPass: "Horský průsmyk" },
     tourGrid: { tag: "// VYBER SI TRASU", heading: "NAŠE TÚRY", bookNow: "REZERVOVAT →" },
