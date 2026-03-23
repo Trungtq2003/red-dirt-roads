@@ -26,10 +26,15 @@ const TourGrid = () => {
           <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">{t.tourGrid.tag}</p>
           <h2 className="font-display text-5xl md:text-7xl text-foreground">{t.tourGrid.heading}</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {tours.map((tour) => (
             <TourCard key={tour.name} {...tour} bookLabel={t.tourGrid.bookNow} />
           ))}
+        </div>
+        <div className="flex justify-center">
+          <a href="#tours" className="inline-block bg-primary text-primary-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:scale-[1.02] transition-transform">
+            {t.tourGrid.exploreAll}
+          </a>
         </div>
       </div>
     </section>
