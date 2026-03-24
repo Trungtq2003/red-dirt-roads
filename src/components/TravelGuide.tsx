@@ -24,21 +24,27 @@ const TravelGuide = () => {
         </div>
 
         {/* Featured article */}
-        <article className="group grid grid-cols-1 lg:grid-cols-2 gap-0 mb-8 bg-card border border-border overflow-hidden hover:border-primary/40 transition-colors">
-          <div className="aspect-[16/10] lg:aspect-auto overflow-hidden">
-            <img src={articles[0].image} alt={articles[0].title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="flex flex-col justify-center p-8 lg:p-12">
-            <div className="flex items-center gap-2 mb-3">
-              <articles[0].icon className="w-4 h-4 text-primary" />
-              <span className="font-mono text-xs tracking-widest text-primary uppercase">{t.travelGuide.badge}</span>
-            </div>
-            <h3 className="font-display text-3xl md:text-4xl text-foreground mb-4">{articles[0].title}</h3>
-            <p className="font-body text-muted-foreground leading-relaxed mb-6">{articles[0].desc}</p>
-            <span className="font-heading text-sm text-primary tracking-wider uppercase cursor-pointer hover:underline underline-offset-4 self-start">
-              {t.travelGuide.readMore} →
-            </span>
-          </div>
+        {(() => {
+          const FeaturedIcon = articles[0].icon;
+          return (
+            <article className="group grid grid-cols-1 lg:grid-cols-2 gap-0 mb-8 bg-card border border-border overflow-hidden hover:border-primary/40 transition-colors">
+              <div className="aspect-[16/10] lg:aspect-auto overflow-hidden">
+                <img src={articles[0].image} alt={articles[0].title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="flex flex-col justify-center p-8 lg:p-12">
+                <div className="flex items-center gap-2 mb-3">
+                  <FeaturedIcon className="w-4 h-4 text-primary" />
+                  <span className="font-mono text-xs tracking-widest text-primary uppercase">{t.travelGuide.badge}</span>
+                </div>
+                <h3 className="font-display text-3xl md:text-4xl text-foreground mb-4">{articles[0].title}</h3>
+                <p className="font-body text-muted-foreground leading-relaxed mb-6">{articles[0].desc}</p>
+                <span className="font-heading text-sm text-primary tracking-wider uppercase cursor-pointer hover:underline underline-offset-4 self-start">
+                  {t.travelGuide.readMore} →
+                </span>
+              </div>
+            </article>
+          );
+        })()}
         </article>
 
         {/* Secondary articles */}
