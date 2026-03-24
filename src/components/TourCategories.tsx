@@ -1,40 +1,40 @@
-import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const TourCategories = () => {
-  const [active, setActive] = useState(0);
+interface TourCategoriesProps {
+  active: string;
+  onSelect: (category: string) => void;
+}
+
+const TourCategories = ({ active, onSelect }: TourCategoriesProps) => {
   const { t } = useLanguage();
 
   const categories = [
-    { icon: "🏍️", label: t.categories.motorbike },
-    { icon: "💨", label: t.categories.dirtbike },
-    { icon: "🔥", label: t.categories.bigbike },
-    { icon: "⛰️", label: t.categories.offroad },
-    { icon: "🌿", label: t.categories.jungleTrail },
-    { icon: "🏔️", label: t.categories.mountainPass },
+    { key: "ALL", icon: "🔥", label: t.tourGrid.exploreAll.includes("EXPLORE") ? "ALL" : t.categories.motorbike.toUpperCase() === t.categories.motorbike ? "ALL" : "All" },
+    { key: "MOTORBIKE", icon: "🏍️", label: t.categories.motorbike },
+    { key: "DIRTBIKE", icon: "💨", label: t.categories.dirtbike },
+    { key: "BIGBIKE", icon: "🔥", label: t.categories.bigbike },
+    { key: "OFFROAD", icon: "⛰️", label: t.categories.offroad },
+    { key: "JUNGLE", icon: "🌿", label: t.categories.jungleTrail },
+    { key: "MOUNTAIN", icon: "🏔️", label: t.categories.mountainPass },
   ];
 
   return (
-    <section className="bg-surface border-y border-border">
-      <div className="container mx-auto px-6">
-        <div className="flex overflow-x-auto gap-2 py-4 scrollbar-hide">
-          {categories.map((cat, i) => (
-            <button
-              key={i}
-              onClick={() => setActive(i)}
-              className={`flex items-center gap-2 px-6 py-3 font-heading text-sm tracking-wider uppercase whitespace-nowrap transition-all ${
-                active === i
-                  ? "border-2 border-primary text-primary shadow-[0_0_15px_rgba(212,87,10,0.3)]"
-                  : "border border-border text-muted-foreground hover:text-foreground hover:border-foreground/30"
-              }`}
-            >
-              <span>{cat.icon}</span>
-              <span>{cat.label}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-    </section>
+    <div className="flex overflow-x-auto gap-3 scrollbar-hide pb-2">
+      {categories.map((cat) => (
+        <button
+          key={cat.key}
+          onClick={() => onSelect(cat.key)}
+          className={`flex items-center gap-2 px-5 py-2.5 font-heading text-sm tracking-wider uppercase whitespace-nowrap transition-all duration-300 ${
+            active === cat.key
+              ? "border-2 border-primary text-primary bg-primary/10 shadow-[0_0_15px_hsl(var(--primary)/0.3)]"
+              : "border border-border text-muted-foreground hover:text-foreground hover:border-foreground/30 hover:bg-muted/50"
+          }`}
+        >
+          <span className="text-base">{cat.icon}</span>
+          <span>{cat.label}</span>
+        </button>
+      ))}
+    </div>
   );
 };
 
