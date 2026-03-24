@@ -18,7 +18,7 @@ const Index = () => {
       <HeroSection />
       <CompanyIntro />
       <WhyChooseUs />
-      <TourCategories />
+      
       <TourGrid />
       <FeatureStrip />
       <GroupTours />
