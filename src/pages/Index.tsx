@@ -16,9 +16,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <TourCategories />
       <CompanyIntro />
       <WhyChooseUs />
+      <TourCategories />
       <TourGrid />
       <FeatureStrip />
       <GroupTours />
