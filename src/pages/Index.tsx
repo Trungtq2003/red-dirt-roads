@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import TourCategories from "@/components/TourCategories";
+
 import CompanyIntro from "@/components/CompanyIntro";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TourGrid from "@/components/TourGrid";
