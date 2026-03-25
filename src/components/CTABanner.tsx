@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { useLanguage } from "@/i18n/LanguageContext";
 
 const CTABanner = () => {
   const [email, setEmail] = useState("");
-  const { t } = useLanguage();
 
   return (
     <section className="bg-surface noise-overlay py-20 relative overflow-hidden checkered-accent">
@@ -20,19 +18,19 @@ const CTABanner = () => {
 
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h2 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-4">
-          {t.cta.heading1}<br />{t.cta.heading2}
+          YOUR NEXT ADVENTURE<br />STARTS HERE
         </h2>
-        <p className="font-heading text-xl text-muted-foreground mb-10 max-w-lg mx-auto">{t.cta.subtitle}</p>
+        <p className="font-heading text-xl text-muted-foreground mb-10 max-w-lg mx-auto">Drop your email. We'll send you route intel, rider stories, and exclusive deals.</p>
         <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder={t.cta.placeholder}
+            placeholder="your@email.com"
             className="flex-1 bg-background border border-border px-5 py-4 font-mono text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary"
           />
           <button className="bg-primary text-primary-foreground font-heading text-sm tracking-wider uppercase px-8 py-4 hover:scale-[1.02] transition-transform whitespace-nowrap">
-            {t.cta.button}
+            GET A QUOTE
           </button>
         </div>
       </div>

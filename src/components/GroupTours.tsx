@@ -1,5 +1,4 @@
 import { Users, CalendarDays } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
 import tourMountain from "@/assets/tour-mountain.jpg";
 import tourJungle from "@/assets/tour-jungle.jpg";
 import tourCoastal from "@/assets/tour-coastal.jpg";
@@ -11,15 +10,13 @@ const groupTours = [
 ];
 
 const GroupTours = () => {
-  const { t } = useLanguage();
-
   return (
     <section id="group-tours" className="bg-surface py-20 racing-stripe">
       <div className="container mx-auto px-6">
         <div className="mb-12">
-          <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">{t.groupTours.tag}</p>
-          <h2 className="font-display text-5xl md:text-7xl text-foreground mb-4">{t.groupTours.heading}</h2>
-          <p className="font-heading text-xl text-muted-foreground max-w-lg">{t.groupTours.subtitle}</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">// RIDE TOGETHER</p>
+          <h2 className="font-display text-5xl md:text-7xl text-foreground mb-4">GROUP TOURS</h2>
+          <p className="font-heading text-xl text-muted-foreground max-w-lg">Join fellow riders on our most popular routes. Group discounts, shared campfires, unforgettable bonds.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -39,13 +36,13 @@ const GroupTours = () => {
                   <span>{tour.terrain}</span>
                 </div>
                 <div className="flex items-center gap-4 font-mono text-xs text-muted-foreground mb-4">
-                  <span className="flex items-center gap-1"><Users className="w-3 h-3" />{t.groupTours.minRiders}: {tour.minRiders}</span>
+                  <span className="flex items-center gap-1"><Users className="w-3 h-3" />Min riders: {tour.minRiders}</span>
                   <span className="flex items-center gap-1"><CalendarDays className="w-3 h-3" />{tour.nextDate}</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="font-heading text-2xl font-bold text-primary">{tour.price}<span className="text-sm text-muted-foreground">{t.groupTours.perPerson}</span></span>
+                  <span className="font-heading text-2xl font-bold text-primary">{tour.price}<span className="text-sm text-muted-foreground">/person</span></span>
                   <button className="font-heading text-sm tracking-wider uppercase text-foreground border border-foreground/30 px-4 py-2 hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all">
-                    {t.tourGrid.bookNow}
+                    BOOK NOW →
                   </button>
                 </div>
               </div>
@@ -53,10 +50,9 @@ const GroupTours = () => {
           ))}
         </div>
 
-        {/* Scroll-to-section CTA buttons */}
         <div className="flex flex-wrap gap-4 justify-center">
           <a href="#tours" className="inline-block bg-primary text-primary-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:scale-[1.02] transition-transform">
-            {t.groupTours.exploreTours}
+            EXPLORE ALL TOURS
           </a>
         </div>
       </div>

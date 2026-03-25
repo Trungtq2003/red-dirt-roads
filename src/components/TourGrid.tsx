@@ -1,5 +1,4 @@
 import { useState, useMemo } from "react";
-import { useLanguage } from "@/i18n/LanguageContext";
 import TourCard from "./TourCard";
 import TourCategories from "./TourCategories";
 import tourMountain from "@/assets/tour-mountain.jpg";
@@ -19,7 +18,6 @@ const tours = [
 ];
 
 const TourGrid = () => {
-  const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("ALL");
 
   const filtered = useMemo(() => {
@@ -33,8 +31,8 @@ const TourGrid = () => {
     <section id="tours" className="bg-background py-20 tire-track">
       <div className="container mx-auto px-6">
         <div className="mb-8">
-          <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">{t.tourGrid.tag}</p>
-          <h2 className="font-display text-5xl md:text-7xl text-foreground">{t.tourGrid.heading}</h2>
+          <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">// SELECT YOUR ROUTE</p>
+          <h2 className="font-display text-5xl md:text-7xl text-foreground">OUR TOURS</h2>
         </div>
 
         <div className="mb-10">
@@ -44,7 +42,7 @@ const TourGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {filtered.length > 0 ? (
             filtered.map((tour) => (
-              <TourCard key={tour.name} {...tour} bookLabel={t.tourGrid.bookNow} />
+              <TourCard key={tour.name} {...tour} bookLabel="BOOK NOW →" />
             ))
           ) : (
             <p className="col-span-full text-center text-muted-foreground font-mono text-sm py-12">
@@ -58,7 +56,7 @@ const TourGrid = () => {
             href="#tours"
             className="inline-block bg-primary text-primary-foreground font-heading text-lg font-semibold px-8 py-4 tracking-wider uppercase hover:scale-[1.02] transition-transform"
           >
-            {t.tourGrid.exploreAll}
+            EXPLORE ALL OUR TOURS
           </a>
         </div>
       </div>
