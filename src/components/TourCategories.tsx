@@ -1,23 +1,19 @@
-import { useLanguage } from "@/i18n/LanguageContext";
-
 interface TourCategoriesProps {
   active: string;
   onSelect: (category: string) => void;
 }
 
+const categories = [
+  { key: "ALL", icon: "🔥", label: "All" },
+  { key: "MOTORBIKE", icon: "🏍️", label: "Motorbike" },
+  { key: "DIRTBIKE", icon: "💨", label: "Dirtbike" },
+  { key: "BIGBIKE", icon: "🔥", label: "Bigbike" },
+  { key: "OFFROAD", icon: "⛰️", label: "Offroad" },
+  { key: "JUNGLE", icon: "🌿", label: "Jungle Trail" },
+  { key: "MOUNTAIN", icon: "🏔️", label: "Mountain Pass" },
+];
+
 const TourCategories = ({ active, onSelect }: TourCategoriesProps) => {
-  const { t } = useLanguage();
-
-  const categories = [
-    { key: "ALL", icon: "🔥", label: t.tourGrid.exploreAll.includes("EXPLORE") ? "ALL" : t.categories.motorbike.toUpperCase() === t.categories.motorbike ? "ALL" : "All" },
-    { key: "MOTORBIKE", icon: "🏍️", label: t.categories.motorbike },
-    { key: "DIRTBIKE", icon: "💨", label: t.categories.dirtbike },
-    { key: "BIGBIKE", icon: "🔥", label: t.categories.bigbike },
-    { key: "OFFROAD", icon: "⛰️", label: t.categories.offroad },
-    { key: "JUNGLE", icon: "🌿", label: t.categories.jungleTrail },
-    { key: "MOUNTAIN", icon: "🏔️", label: t.categories.mountainPass },
-  ];
-
   return (
     <div className="flex overflow-x-auto gap-3 scrollbar-hide pb-2">
       {categories.map((cat) => (

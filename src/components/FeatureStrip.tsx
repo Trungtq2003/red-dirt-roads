@@ -1,16 +1,13 @@
 import { Calendar, Map, Shield, Wrench } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+
+const features = [
+  { icon: Calendar, stat: "12+", label: "Years Experience" },
+  { icon: Map, stat: "500+", label: "Routes Mapped" },
+  { icon: Shield, stat: "Expert", label: "Local Guides" },
+  { icon: Wrench, stat: "Full", label: "Gear Included" },
+];
 
 const FeatureStrip = () => {
-  const { t } = useLanguage();
-
-  const features = [
-    { icon: Calendar, stat: "12+", label: t.features.years },
-    { icon: Map, stat: "500+", label: t.features.routes },
-    { icon: Shield, stat: "Expert", label: t.features.guides },
-    { icon: Wrench, stat: "Full", label: t.features.gear },
-  ];
-
   return (
     <section className="bg-surface border-y border-border py-12 track-border-top track-border-bottom checkered-accent">
       <div className="container mx-auto px-6">

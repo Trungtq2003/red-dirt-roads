@@ -1,24 +1,21 @@
 import { Shield, Wrench, Map, Users, Headphones, Award } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+
+const reasons = [
+  { icon: Shield, title: "Safety First", desc: "Full protective gear, first-aid trained guides, and satellite communication on every ride." },
+  { icon: Wrench, title: "Premium Gear", desc: "Top-tier bikes maintained daily. Helmets, boots, and armor included." },
+  { icon: Map, title: "Curated Routes", desc: "Hand-picked trails tested by our team. No generic tourist paths." },
+  { icon: Users, title: "Expert Guides", desc: "Local riders who know the terrain, culture, and hidden gems." },
+  { icon: Headphones, title: "24/7 Support", desc: "Roadside assistance and backup vehicles on every tour." },
+  { icon: Award, title: "12+ Years", desc: "Over a decade of leading unforgettable adventures across SE Asia." },
+];
 
 const WhyChooseUs = () => {
-  const { t } = useLanguage();
-
-  const reasons = [
-    { icon: Shield, title: t.whyChoose.safetyTitle, desc: t.whyChoose.safetyDesc },
-    { icon: Wrench, title: t.whyChoose.gearTitle, desc: t.whyChoose.gearDesc },
-    { icon: Map, title: t.whyChoose.routesTitle, desc: t.whyChoose.routesDesc },
-    { icon: Users, title: t.whyChoose.guidesTitle, desc: t.whyChoose.guidesDesc },
-    { icon: Headphones, title: t.whyChoose.supportTitle, desc: t.whyChoose.supportDesc },
-    { icon: Award, title: t.whyChoose.experienceTitle, desc: t.whyChoose.experienceDesc },
-  ];
-
   return (
     <section className="bg-background py-20">
       <div className="container mx-auto px-6">
         <div className="mb-12 text-center">
-          <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">{t.whyChoose.tag}</p>
-          <h2 className="font-display text-5xl md:text-7xl text-foreground">{t.whyChoose.heading}</h2>
+          <p className="font-mono text-xs tracking-[0.3em] text-primary mb-2">// THE WILDTRACK DIFFERENCE</p>
+          <h2 className="font-display text-5xl md:text-7xl text-foreground">WHY CHOOSE US</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map((r, i) => (
