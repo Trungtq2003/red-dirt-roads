@@ -41,27 +41,54 @@ const TravelGuide = () => {
           </article>
 
           <div className="flex flex-col gap-6">
-            {articles.slice(1).map((item) => {
-              const Icon = item.icon;
+            {/* Top item - horizontal card */}
+            {(() => {
+              const topItem = articles[1];
+              const TopIcon = topItem.icon;
               return (
-                <article key={item.title} className="group flex-1 bg-card border border-border overflow-hidden hover:border-primary/40 transition-colors flex flex-col sm:flex-row">
+                <article className="group bg-card border border-border overflow-hidden hover:border-primary/40 transition-colors flex flex-col sm:flex-row">
                   <div className="sm:w-2/5 aspect-[16/10] sm:aspect-auto overflow-hidden">
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={topItem.image} alt={topItem.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="p-5 flex flex-col justify-center sm:w-3/5">
                     <div className="flex items-center gap-2 mb-2">
-                      <Icon className="w-4 h-4 text-primary" />
+                      <TopIcon className="w-4 h-4 text-primary" />
                       <span className="font-mono text-[10px] tracking-widest text-muted-foreground uppercase">TRAVEL GUIDE</span>
                     </div>
-                    <h3 className="font-heading text-lg text-foreground font-semibold mb-1">{item.title}</h3>
-                    <p className="font-mono text-xs text-muted-foreground leading-relaxed mb-3">{item.desc}</p>
+                    <h3 className="font-heading text-lg text-foreground font-semibold mb-1">{topItem.title}</h3>
+                    <p className="font-mono text-xs text-muted-foreground leading-relaxed mb-3">{topItem.desc}</p>
                     <span className="font-heading text-xs text-primary tracking-wider uppercase cursor-pointer hover:underline underline-offset-4">
                       READ THE GUIDE →
                     </span>
                   </div>
                 </article>
               );
-            })}
+            })()}
+
+            {/* Bottom two items side by side */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
+              {articles.slice(2).map((item) => {
+                const Icon = item.icon;
+                return (
+                  <article key={item.title} className="group bg-card border border-border overflow-hidden hover:border-primary/40 transition-colors flex flex-col h-full">
+                    <div className="aspect-[16/10] overflow-hidden">
+                      <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div className="p-5 flex flex-col justify-center flex-1">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Icon className="w-4 h-4 text-primary" />
+                        <span className="font-mono text-[10px] tracking-widest text-muted-foreground uppercase">TRAVEL GUIDE</span>
+                      </div>
+                      <h3 className="font-heading text-lg text-foreground font-semibold mb-1">{item.title}</h3>
+                      <p className="font-mono text-xs text-muted-foreground leading-relaxed mb-3">{item.desc}</p>
+                      <span className="font-heading text-xs text-primary tracking-wider uppercase cursor-pointer hover:underline underline-offset-4">
+                        READ THE GUIDE →
+                      </span>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
