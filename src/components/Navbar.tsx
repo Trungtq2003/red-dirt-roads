@@ -1,10 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
+import SignUpModal from "@/components/SignUpModal";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [signUpOpen, setSignUpOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const navItems = [
