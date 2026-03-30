@@ -59,6 +59,12 @@ const Navbar = () => {
           <a href="#tours" className="bg-primary text-primary-foreground font-heading text-sm tracking-wider uppercase px-5 py-2 hover:scale-[1.02] transition-transform">
             BOOK NOW
           </a>
+          <button
+            onClick={() => setSignUpOpen(true)}
+            className="border border-primary text-primary font-heading text-sm tracking-wider uppercase px-5 py-2 hover:bg-primary hover:text-primary-foreground transition-colors"
+          >
+            SIGN UP
+          </button>
         </div>
 
         <button onClick={() => setOpen(!open)} className="md:hidden text-foreground">
@@ -98,9 +104,17 @@ const Navbar = () => {
             <a href="#tours" className="bg-primary text-primary-foreground font-heading text-sm tracking-wider uppercase px-5 py-3 text-center mt-2">
               BOOK NOW
             </a>
+            <button
+              onClick={() => { setOpen(false); setSignUpOpen(true); }}
+              className="border border-primary text-primary font-heading text-sm tracking-wider uppercase px-5 py-3 text-center hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              SIGN UP
+            </button>
           </div>
         </div>
       )}
+
+      <SignUpModal open={signUpOpen} onOpenChange={setSignUpOpen} />
     </nav>
   );
 };
